@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Phantom Sans';
+    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff')
+        format('woff'),
+      url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2')
+        format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Phantom Sans';
+    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff')
+        format('woff'),
+      url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff2')
+        format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Phantom Sans';
+    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff')
+        format('woff'),
+      url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2')
+        format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  :root {
+    --hc-red: #ec3750;
+    --hc-white: #fff;
+    --hc-purple: #a633d6;
+    --hc-blue: #338eda;
+    --hc-cyan: #5bc0de;
+}
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Phantom Sans', 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    background: #f7f7fa;
+    color: #222;
+}
+.header {
+    position: relative;
+    background: linear-gradient(135deg, var(--hc-purple) 0%, var(--hc-blue) 50%, var(--hc-cyan) 100%);
+    width: 100%;
+    padding: 3rem 0;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 20px rgba(166, 51, 214, 0.3);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0 0 1rem 0;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-desc {
+    font-size: 1.2rem;
+    margin: 0;
+    opacity: 0.95;
+    font-weight: 400;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.hclink-btn {
+    display: block;
+    height: 0;
+    overflow: visible;
+}
+
+.hc-image {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 128px;
+  border: 0;
+  z-index: 1000;
+  transition: transform 0.2s ease;
+}
+
+.hc-image:hover {
+    transform: scale(1.1);
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+    color: #888;
+    font-size: 1rem;
+    background: transparent;
+    margin-top: 3rem;
+}
+
+.footer a:hover {
+    color: var(--hc-red);
+}
