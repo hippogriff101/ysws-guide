@@ -132,7 +132,7 @@ h1 {
     color: var(--hc-red);
 }
 
-#emoji {
+.emoji {
     width: 25px;
     height: auto;
 }
