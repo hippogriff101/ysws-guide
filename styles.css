@@ -128,7 +128,7 @@ h1 {
     margin-top: 3rem;
 }
 
-.footer a:hover {
+a:hover {
     color: var(--hc-red);
 }
 
