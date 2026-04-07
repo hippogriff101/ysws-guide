@@ -95,6 +95,29 @@ h1 {
     transform: scale(1.1);
 }
 
+.ysws-btn {
+  background: var(--hc-red);
+  color: var(--hc-white);
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 128px;
+  border: 0;
+  z-index: 1000;
+  transition: transform 0.2s ease;
+  margin-left: 2rem;
+  box-shadow: 0 2px 8px rgba(236,55,80,0.15);
+}
+
+.ysws-btn:hover {
+    transform: scale(1.1);
+}
 .footer {
     width: 100%;
     text-align: center;
@@ -107,4 +130,9 @@ h1 {
 
 .footer a:hover {
     color: var(--hc-red);
+}
+
+#emoji {
+    width: 25px;
+    height: auto;
 }
